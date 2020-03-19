@@ -10,9 +10,10 @@ spring:
         allow-bean-definition-overriding: true
     datasource:
         driver-class-name:  com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.175.100:3306/mykit_transaction_message_order?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://127.0.0.1:3306/mykit_transaction_message_order?useUnicode=true&characterEncoding=utf8&useSSL
+      =false
         username: root
-        password: root
+        password: 123456
         initialSize: 20
         minIdle: 20
         maxActive: 100
@@ -55,7 +56,7 @@ org:
                  driverClassName  : com.mysql.jdbc.Driver
                  url :  jdbc:mysql://127.0.0.1:3306/mykit_transaction_message?useUnicode=true&amp;characterEncoding=utf8&useSSL=false
                  username : root
-                 password : root
+                 password : 123456
 
        # repositorySupport : redis
        #         hostName  : 192.168.1.68

@@ -30,6 +30,12 @@ public class MykitTransactionEventTranslator implements EventTranslatorOneArg<My
 
     private int type;
 
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public MykitTransactionEventTranslator(){}
+
     /**
      * Instantiates a new Myth transaction event translator.
      *

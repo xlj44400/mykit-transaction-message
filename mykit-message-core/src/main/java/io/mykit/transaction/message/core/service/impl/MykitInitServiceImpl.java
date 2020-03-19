@@ -75,8 +75,8 @@ public class MykitInitServiceImpl implements MykitInitService {
      */
     private void loadSpiSupport(final MykitTransactionMessageConfig mykitTransactionMessageConfig) {
         //spi serialize
-        final ObjectSerializer serializer = ExtensionLoader.getExtensionLoader(ObjectSerializer.class)
-                .getActivateExtension(mykitTransactionMessageConfig.getSerializer());
+        ObjectSerializer serializer = ExtensionLoader.getExtensionLoader(ObjectSerializer.class)
+                   .getActivateExtension(mykitTransactionMessageConfig.getSerializer());
 
         SpringBeanUtils.getInstance().registerBean(ObjectSerializer.class.getName(), serializer);
 

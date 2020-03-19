@@ -7,9 +7,10 @@ server:
 spring:
     datasource:
         driver-class-name:  com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.175.100:3306/mykit_transaction_message_stock?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://127.0.0.1:3306/mykit_transaction_message_stock?useUnicode=true&characterEncoding=utf8&useSSL
+      =false
         username: root
-        password: root
+        password: 123456
         platform: mysql
         type: com.alibaba.druid.pool.DruidDataSource
         initialSize: 20
@@ -33,15 +34,15 @@ spring:
     #   user: happylife
     #   password: happylifeplat01
     #   trust-all: true
-   #rabbitmq:
-    #    host: localhost
-    #    port: 5672
-    #    username: guest
-    #    password: guest
-    rocketmq:
-        namesrvAddr: 192.168.175.100:9876
-        consumerGroupName: inventory
-        instanceName: inventory
+   rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+#    rocketmq:
+#        namesrvAddr: 192.168.175.100:9876
+#        consumerGroupName: inventory
+#        instanceName: inventory
 #    kafka:
 #        consumer:
 #           bootstrap-servers: 192.168.1.91:9092
@@ -71,7 +72,7 @@ org:
                  driverClassName  : com.mysql.jdbc.Driver
                  url :  jdbc:mysql://127.0.0.1:3306/mykit_transaction_message?useUnicode=true&amp;characterEncoding=utf8&useSSL=false
                  username : root
-                 password : root
+                 password : 123456
 
 
 inventory-service :
